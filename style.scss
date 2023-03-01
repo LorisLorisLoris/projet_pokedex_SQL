@@ -1,0 +1,154 @@
+body {
+  font-family: "Helvetica", sans-serif;
+  padding: 5%;
+  background-color: rgb(243, 243, 243);
+
+  h1 {
+    color: rgb(33, 33, 33);
+    text-align: center;
+  }
+}
+
+.button {
+  margin-top: 2em;
+  text-align: center;
+  a {
+    text-decoration: none;
+    background-color: azure;
+    color: rgb(39, 39, 45);
+    padding: 0.6em;
+    border-radius: 5px;
+    &:hover {
+      background-color: rgb(23, 57, 105);
+      color: rgb(255, 255, 255);
+      padding: 0.6em;
+      border-radius: 5px;
+    }
+  }
+}
+
+.delete {
+  margin-top: 0.2em;
+  text-align: center;
+  a {
+    font-size: 10px;
+    text-decoration: none;
+    background-color: rgb(255, 240, 240);
+    color: rgb(39, 39, 45);
+    padding: 0.6em;
+    border-radius: 5px;
+    &:hover {
+      background-color: rgb(166, 23, 23);
+      color: rgb(255, 255, 255);
+      padding: 0.6em;
+      border-radius: 5px;
+    }
+  }
+}
+
+button {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  background-color: rgb(239, 215, 255);
+  color: rgb(39, 39, 45);
+  padding: 0.6em;
+  border-radius: 5px;
+  &:hover {
+    background-color: rgb(133, 61, 122);
+    color: rgb(255, 255, 255);
+    padding: 0.6em;
+    border-radius: 5px;
+  }
+}
+
+.addpage {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  form div {
+    margin-top: 2em;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.card {
+  margin-top: 3em;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(120, 120, 120, 0.2);
+
+  &:hover {
+    box-shadow: 0px 0px 10px 0px rgba(126, 147, 255, 0.2);
+  }
+
+  img {
+    max-width: 100px;
+    object-fit: cover;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    a {
+      text-decoration: none;
+      color: rgb(33, 33, 33);
+      &:hover {
+        text-decoration: underline;
+        color: rgb(60, 60, 60);
+      }
+    }
+  }
+
+  .info {
+    padding: 10px;
+
+    p {
+      font-size: 14px;
+    }
+
+    .types {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+
+      .type {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px;
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+        }
+
+        span {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
